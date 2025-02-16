@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import yetkiSlice from "../features/yetkiSlice";
-import haberSlice from "../features/haberSlice";
+import yetkiSlice from "../features/YetkiSlice";
+import haberSlice from "../features/HaberSlice";
 
 export const Store = configureStore({
   reducer: {

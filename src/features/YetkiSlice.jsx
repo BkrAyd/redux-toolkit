@@ -1,9 +1,21 @@
-import React from 'react'
+import { createSlice } from "@reduxjs/toolkit"
 
-const YetkiSlice = () => {
-  return (
-    <div>YetkiSlice</div>
-  )
-}
+const YetkiSlice = createSlice({
+  name: "yetkiSlice",
+  initialState: {
+    email: "",
+    password: ""
+  },
+  reducers: {
+    kullaniciOlustur: () => {
 
-export default YetkiSlice
+    },
+    kullaniciSil: () => {
+
+    }
+  }
+})
+
+export const { kullaniciOlustur, kullaniciSil } = YetkiSlice.actions
+
+export default YetkiSlice.reducer
